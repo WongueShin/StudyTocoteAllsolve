@@ -26,11 +26,12 @@ def solution(name):
             que.pop(que.index(cursor))
             continue
         nextIdx = cursor
-        for ele in range(que):
+        for ele in range(len(que)):
             nextIdx = ele
             if que[ele] > cursor:
                 break
-        next = min(que[nextIdx] - cursor, que[nextIdx - 1])
+        next = [que[nextIdx] - cursor, que[nextIdx - 1] - cursor]
+        print(cursor, next)
         
     return counter
 
