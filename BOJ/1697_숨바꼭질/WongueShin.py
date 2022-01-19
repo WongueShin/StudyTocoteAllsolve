@@ -11,7 +11,7 @@ def solution():
     if N == K:
         return 0
     space = [0 for _ in range(1, size_of_space)]
-    que = deque([[N]])
+    que = deque([N])
     times = 0
     while True:
         times += 1
