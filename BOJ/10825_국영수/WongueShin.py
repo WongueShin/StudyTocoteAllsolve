@@ -10,5 +10,4 @@ def solution():
     for i in range(N):
         print(studentList[i][0])
     
-
 solution()
